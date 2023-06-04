@@ -4,13 +4,21 @@ import {
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom'
-import Root from './routes/root'
 import './index.css'
+
+import Root from './routes/root'
+import Timeline from './routes/timeline'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />
+    element: <Root />,
+    children: [
+      {
+        path: "/",
+        element: <Timeline />
+      }
+    ]
   }
 ])
 

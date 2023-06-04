@@ -1,6 +1,6 @@
 export default function Navbar() {
     return (
-        <nav className="font-sans flex flex-row py-4 px-6 bg-white shadow w-full text-left justify-between items-baseline">
+        <nav className="font-sans flex flex-row py-4 px-6 mb-4 bg-white shadow w-full text-left justify-between items-baseline">
             <div className="mb-2">
                 <a href="/" className="text-2xl no-underline text-blue-500 hover:text-gray-500">AI Twitter Clone</a>
             </div>
